@@ -13,6 +13,7 @@ body {
   nav {
     background-color: #f2f2f2;
     padding: 10px;
+    margin-right: auto;
   }
   
   nav ul {
@@ -20,7 +21,6 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
   }
   
   nav ul li {
@@ -56,4 +56,3 @@ body {
     padding: 20px;
     text-align: center;
   }
-  
