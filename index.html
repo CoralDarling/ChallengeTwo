@@ -1,37 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coral Darling's Portfolio</title>
+    <title>Coral's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-
 <body>
-    <header>
-        <h1>Coral Darling's Portfolio</h1>
-        <!-- <img src="" alt=""> -->
-        <nav>
-            <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Resume</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Coral Darlings Portfolio</h1>
+            <nav>
+                <ul class="header__nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <main>
-        <section class="flex-container">
-            <div class="flex-item"><a href="https://github.com/CoralDarling/Color-Flipper" target="_blank">Color Flipper
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://static.zerochan.net/Lulu.%28League.of.Legends%29.full.3357404.jpg"
+                        alt="Coral Darling" class="about-avatar">
+                </div>
+                <div class="about-text">
+                    <p>Hello, my name is Coral Darling and my pronouns are she/her.
+                        I am currently attending a full-stack software development bootcamp through the University of
+                        Oregon.
+                        I am also attending Portland State University as a senior, finishing up my BS in Art History and
+                        Japanese Language.
+                        I presently hold a Customer Support Specialist Tier I role at a Cybersecurities company,
+                        ZeroFox.<br><br>
+                        Previously I was an Assistant Manager at Gamestop, and have a passion for connecting with
+                        customers and colleagues.
+                        In my free time I love learning new languages, and traveling abroad.
+                        In early 2023 I started a TikTok account focused on travel advice for people visiting Japan, and
+                        have gained 4k followers, with several videos reaching 1M views & saves.<br><br>
+                        It brings me joy to answer the multitude of questions I receive from my followers, and helping
+                        them have their dream trip to Japan!<br><br>
+                        My focus and ultimate goal is to gain software development knowledge, and experience with which
+                        I can continue to help others within the scope of my career.</p>
+                </div>
             </div>
-            <div class="flex-item"><a href="https://github.com/CoralDarling/Counter" target="_blank"> Number Counter
+        </div>
+    </section>
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-container">
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <a href="https://coraldarling.github.io/Color-Flipper/">
+                            <img src="https://picsum.photos/800/600" alt="Project 1 Color Flipper"
+                                class="project-image">
+                        </a>
+                        <div class="project-details">
+                            <h3>Color Flipper</h3>
+                            <p>A project demonstrating the cohesive use of HTML, CSS, and JavaScript.</p>
+                            <a href="https://coraldarling.github.io/Color-Flipper/">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <a href="https://github.com/CoralDarling/Counter">
+                            <img src="https://picsum.photos/800/600" alt="Project 2 Number Counter"
+                                class="project-image">
+                        </a>
+                        <div class="project-details">
+                            <h3>Number Counter</h3>
+                            <p>A random number generator showing further use of HTML, CSS, and JavaScript.</p>
+                            <a href="https://coraldarling.github.io/Counter/">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <a href="https://github.com/CoralDarling/run-buddy">
+                            <img src="https://picsum.photos/800/600" alt="Project 3 Run Buddy" class="project-image">
+                        </a>
+                        <div class="project-details">
+                            <h3>Run Buddy</h3>
+                            <p>A project demonstrating a solid understanding in the practical use of HTML & CSS.</p>
+                            <a href="https://github.com/CoralDarling/run-buddy">Learn More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="flex-item"><a href="https://github.com/CoralDarling/run-buddy" target="_blank">Run Buddy</div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2021 My Flexbox Page</p>
+        </div>
+    </section>
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <ul class="contact-list">
+                <li>
+                    <i class="fas fa-envelope"></i> Email:
+                    <a href="mailto:itschaidarling@gmail.com">itschaidarling@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i> Phone: 503-680-2779
+                </li>
+                <li>
+                    <i class="fab fa-linkedin"></i> LinkedIn:
+                    <a href="https://www.linkedin.com/in/coral-darling-660812284/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <i class="fab fa-github"></i> GitHub:
+                    <a href="https://github.com/CoralDarling" target="_blank">GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2023 Coral Darling. All rights reserved.</p>
     </footer>
 </body>
 

@@ -1,71 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    /* padding: 20px; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  } 
-  header h1 {
-    /* background-color: #f2f2f2; */
-  }
-  
-  /* nav { */
-   
-    /* padding: 10px; */
-    /* margin-right: auto;  */
-  /* } */
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    background-color: #ebd4fb;
     color: #333;
-    padding: 10px;
-    color: #f2f2f2;
 }
-  
-  main {
-    padding: 20px;
-  }
-  
-  .flex-container {
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header,
+.footer {
+    background-color: #f5e9ed;
+    color: #674470;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header .header__title {
+    color: #333;
+    font-size: 36px;
+}
+
+.header__nav {
+    list-style: none;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav li {
+    margin-right: 20px;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: #a67ac5;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.header__nav a:hover {
+    color: #ebd4fb;
+}
+
+.section {
+    padding: 60px 20px;
+    background-color: #f5e9ed;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-avatar {
+    border-radius: 50%;
+    max-width: 160px;
+    display: block;
+    margin: 0 auto;
+    margin-right: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 50px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 2px;
+    background-color: #333;
+}
+
+.project-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-  }
+    justify-content: space-around;
+}
 
-  .flex-container :nth-child(1) {
-    flex: 1 0 80%;
-  }
-  
-  .flex-item {
-    flex: 1 0 40%;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
+.project-item {
+    width: 48%;
+    margin-bottom: 30px;
+    position: relative;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-item:first-child {
+    width: 70%;
+}
+
+.project-image-container {
+    position: relative;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.03);
+}
+
+.project-item:hover .project-image {
+    opacity: 0.9;
+}
+
+.project-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    margin: 10px;
+    border-radius: 5px;
     text-align: center;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    display: none;
+    z-index: 1;
+
+}
+
+.project-item:hover .project-details {
+    display: block;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
     text-align: center;
-  }
+}
+
+.contact-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #c995ee;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    color: #ebd4fb;
+}
+
+@media only screen and (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-item {
+        width: 100%;
+    }
+}
